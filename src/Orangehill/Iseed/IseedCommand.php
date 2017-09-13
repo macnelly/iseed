@@ -32,6 +32,15 @@ class IseedCommand extends Command
         parent::__construct();
     }
 
+
+    /**
+     * for laravel 5.5
+     */
+    public function handle()
+    {
+        $this->fire();
+    }
+
     /**
      * Execute the console command.
      *
